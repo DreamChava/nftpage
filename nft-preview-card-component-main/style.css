@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+/* everything in light blue */
+.parent-container {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 12px 50px, rgba(0, 0, 0, 0.12) 0px 25px 16px; 
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 10rem auto;
+    padding: 1.2rem;
+}
+
+/* everything til sentence */
+.img-container {
+     display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0; 
+    
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+}
+
+/* equilibrium */
+.equal {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.equal h2 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+
+/* nft line */
+.child-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.etherium, .clock {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.etherium {
+    color: hsl(178, 100%, 50%);
+    font-family: "Outfit", sans-serif;
+}
+
+.clock {
+    color: hsl(215, 51%, 70%);
+    font-family: "Outfit", sans-serif;
+}
+
+/* creator section */
+.avatar {
+    padding-top: 20px;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    border-width: thin;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.avatar img {
+    display: block;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.avatar div {
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.avatar h3 {
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+
+.avatar span {
+    color: hsl(0, 0%, 100%);
+    margin-left: 5px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 500px) {
+    body {
+        display: flex;
+        align-items: center;
+        padding: 0rem 2rem;
+        min-height: 100dvh;
+    }
+
+     .parent-container {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 12px 50px;
+        width: 100%;
+        margin: 0;
+     }
+}
